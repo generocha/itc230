@@ -1,0 +1,19 @@
+{
+  "name": "itc230",
+  "version": "1.0",
+  "description": "Memphis BBQ and Brews",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generocha/itc230.git"
+  },
+  "author": "Gene Rocha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/generocha/itc230/issues"
+  },
+  "homepage": "https://github.com/generocha/itc230",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
