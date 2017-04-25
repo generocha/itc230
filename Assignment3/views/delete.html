@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <a href="/">Memphis Craft Breweries</a>
+{{#if result.deleted}}
+    <h2>The Brewery {{brewery}} has been deleted</h2>
+    Total Breweries: {{result.total}}
+{{else}}
+    <h2>The {{brewery}} was not found</h2>
+{{/if}}
+    </body>
+</html>
