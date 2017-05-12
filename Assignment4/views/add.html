@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <a href="/">Memphis Craft Breweries</a>
+{{#if result.added}}
+    <h2>The Brewery {{brewery}} has been added</h2>
+    Total Breweries: {{result.total}}
+{{else}}
+    <h2>The {{brewery}} brewery was already in the array</h2>
+{{/if}}
+    </body>
+</html>
