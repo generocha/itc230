@@ -1,0 +1,11 @@
+<p>Search Craft Breweries in Memphis, TN</p>
+		<form method="POST" action="/details">
+		 <input type="text" name="name" placeholder="Search.." maxlength="100">
+		<button>Search</button>
+		</form>
+{{#if breweries}}
+<h3>Breweries</h3>
+{{/if}}
+{{#each breweries}}
+    <li><a href="/details?name={{name}}">{{name}}</a></li>
+{{/each}}
