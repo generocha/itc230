@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memphis Craft Breweries</title>
+</head>
+<body>
+    <header><h1><a href="/">Memphis Craft Breweries</a></h1></header>
+    <hr>
+    {{{body}}}
+    <hr>
+    <div class="nav">
+    {{! a template comment that won't appear in the final html }}
+    {{#if breweries}}{{else}}<a href="/">Home</a> |{{/if}}
+    <a href="/about">About</a></div>
+    <footer>&copy; Foo LLC</footer
+</body>
+</html>

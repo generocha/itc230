@@ -1,0 +1,15 @@
+	{{#if result.name}}
+	<h2>Details for {{result.name}}</h2>
+  <ul>
+    <li>Brewery: {{ result.name }}
+    <li>Address: {{ result.address }}, {{ result.city }}, {{ result.state }} {{ result.zip }}
+    <li>Founded: {{ result.founded }}
+  </ul>
+	<a href="/delete?brewery={{result.name}}">Delete</a> the Brewery {{result.name}}
+  {{else}}
+		{{#if added}}
+		The Brewery <a href="details?name={{ added }}">{{ added }}</a> was added.
+		{{else}}
+    The Brewery {{ result }} was not found.
+		{{/if}}
+  {{/if}}
