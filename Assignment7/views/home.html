@@ -1,0 +1,21 @@
+<p>Search Craft Breweries in Memphis, TN</p>
+		<form method="POST" action="/api/details">
+		 <input type="text" name="name" placeholder="Search.." maxlength="100">
+		<button>Search</button>
+		</form>
+		<h2>Add a Brewery</h2>
+    <form method="POST" action="/api/add">
+     <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="address" placeholder="Adress" required>
+    <input type="text" name="zip" placeholder="ZipCode" required>
+    <input type="text" name="city" placeholder="City" required>
+    <input type="text" name="state" placeholder="State" required>
+    <input type="number" name="founded" placeholder="Year Founded" maxlength="4" required>
+    <button>Add</button>
+    </form>
+{{#if breweries}}
+<h3>Breweries</h3>
+{{/if}}
+{{#each breweries}}
+    <li><a href="/details?name={{name}}">{{name}}</a></li>
+{{/each}}

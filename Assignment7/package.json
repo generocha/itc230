@@ -1,0 +1,37 @@
+{
+  "name": "itc230",
+  "version": "1.0.0",
+  "description": "Memphis Craft Breweries",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "jsonfile": "^2.4.0",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.9"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "mocha": "^3.3.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generocha/itc230.git"
+  },
+  "keywords": [
+    "Brews",
+    "Hops"
+  ],
+  "author": "Gene Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/generocha/itc230/issues"
+  },
+  "homepage": "https://github.com/generocha/itc230#readme"
+}
