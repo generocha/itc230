@@ -1,0 +1,18 @@
+	{{#if result.name}}
+	<h2>Details for {{result.name}}</h2>
+  <ul>
+    <li>Brewery: {{ result.name }}
+    <li>Address: {{ result.address }}, {{ result.city }}, {{ result.state }} {{ result.zip }}
+    <li>Founded: {{ result.founded }}
+  </ul>
+	<form method="POST" action="/api/delete">
+	<input type="text" name="name" value="{{result.name}}" readonly>
+ <button>delete</button>
+ </form>
+  {{else}}
+		{{#if added}}
+		The Brewery <a href="details?name={{ added }}">{{ added }}</a> was added.
+		{{else}}
+    The Brewery {{ result }} was not found.
+		{{/if}}
+  {{/if}}

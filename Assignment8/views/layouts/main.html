@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memphis Craft Breweries</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+</head>
+<body>
+    <header><h1><a href="/">Memphis Craft Breweries</a></h1></header>
+    <hr>
+    <div class="container">
+          <div id="root"> </div>
+    </div>
+{{{body}}}
+    <hr>
+    <div class="nav">
+    {{! a template comment that won't appear in the final html }}
+    {{#if breweries}}{{else}}<a href="/">Home</a> |{{/if}}
+    <a href="/about">About</a></div>
+    <footer>&copy; Foo LLC</footer
+</body>
+</html>
