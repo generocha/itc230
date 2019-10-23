@@ -10,7 +10,7 @@
     "express-handlebars": "^3.0.0",
     "jsonfile": "^2.4.0",
     "mongodb": "^2.2.26",
-    "mongoose": "^4.9.9"
+    "mongoose": "^5.7.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",
